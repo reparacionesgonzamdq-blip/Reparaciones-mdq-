@@ -1,0 +1,456 @@
+html_content = '''<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="owoiOC521IgH_hDAsk7e91cCedd61ke7sE8vkSv_ono" />
+    
+    <!-- SEO Básico -->
+    <title>Reparaciones Gonzamdq - Técnico Electromecánico en Mar del Plata</title>
+    <meta name="description" content="Técnico electromecánico en Mar del Plata. Reparación de lavarropas, heladeras, aire acondicionado, termotanques, cafeteras, robots y más. Diagnóstico preciso, repuestos de calidad y garantía en todos los trabajos.">
+    <meta name="keywords" content="reparación lavarropas Mar del Plata, técnico heladeras, reparación aire acondicionado, termotanques, cafeteras, robots, electromecánico, service, garantía">
+    <meta name="author" content="Reparaciones Gonzamdq">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:title" content="Reparaciones Gonzamdq - Técnico Electromecánico">
+    <meta property="og:description" content="Reparación de electrodomésticos en Mar del Plata. Diagnóstico preciso y garantía.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reparacionesgonzamdq-blip.github.io/Reparaciones-mdq/">
+    <meta property="og:image" content="logo.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        /* Header / Hero */
+        header {
+            background: linear-gradient(135deg, #1a5276 0%, #2980b9 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+        
+        .logo-container {
+            margin-bottom: 20px;
+        }
+        
+        .logo-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.3);
+            object-fit: cover;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 25px;
+        }
+        
+        .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+        }
+        
+        /* Botones CTA */
+        .cta-buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+        
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+            box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+        }
+        
+        .btn-instagram:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(220, 39, 67, 0.4);
+        }
+        
+        /* Secciones */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #1a5276;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #2980b9;
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+        
+        /* Servicios */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-card h3 {
+            color: #1a5276;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        /* Sobre Nosotros */
+        .about {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .about p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .feature {
+            text-align: center;
+        }
+        
+        .feature .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .feature h4 {
+            color: #1a5276;
+            font-size: 1rem;
+        }
+        
+        /* Contacto */
+        .contact-section {
+            background: linear-gradient(135deg, #1a5276 0%, #2980b9 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .contact-section p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .contact-buttons .btn {
+            font-size: 1.1rem;
+            padding: 16px 32px;
+        }
+        
+        .btn-light {
+            background: white;
+            color: #1a5276;
+        }
+        
+        .btn-light:hover {
+            background: #f0f0f0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a252f;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            header .subtitle {
+                font-size: 1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 90%;
+                justify-content: center;
+            }
+            
+            section {
+                padding: 40px 15px;
+            }
+            
+            .contact-section {
+                padding: 35px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Reparaciones Gonzamdq Logo">
+        </div>
+        <h1>🔧 Reparaciones Gonzamdq</h1>
+        <p class="subtitle">Técnico Electromecánico en Mar del Plata</p>
+        <div class="location-badge">
+            📍 Mar del Plata, Argentina
+        </div>
+        
+        <div class="cta-buttons">
+            <a href="https://wa.me/549223?text=Hola!%20Vengo%20de%20la%20página%20web%20y%20quiero%20consultar%20por%20una%20reparación." class="btn btn-whatsapp" target="_blank">
+                💬 Consultar por WhatsApp
+            </a>
+            <a href="https://instagram.com/REPARACIONESGONZAMDP" class="btn btn-instagram" target="_blank">
+                📷 Seguir en Instagram
+            </a>
+        </div>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2 class="section-title">Servicios que Ofrecemos</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🧺</div>
+                <h3>Lavarropas</h3>
+                <p>Reparación de todas las marcas y modelos. Cambio de rulemanes, bombas, programadores y más.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">❄️</div>
+                <h3>Heladeras</h3>
+                <p>Service completo. Cambio de motocompresores, recarga de gas, termostatos y circuitos.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌬️</div>
+                <h3>Aire Acondicionado</h3>
+                <p>Instalación, mantenimiento y reparación. Limpieza de filtros, recarga de gas refrigerante.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔥</div>
+                <h3>Termotanques</h3>
+                <p>Reparación y mantenimiento. Cambio de resistencias, ánodos, válvulas y control de fugas.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">☕</div>
+                <h3>Cafeteras</h3>
+                <p>Reparación de cafeteras express y eléctricas. Cambio de resistencias, bombas y sellos.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🤖</div>
+                <h3>Robots y Más</h3>
+                <p>Reparación de aspiradoras robot, licuadoras, batidoras y otros electrodomésticos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros">
+        <div class="about">
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <p>
+                Somos un servicio técnico especializado con años de experiencia en Mar del Plata. 
+                Realizamos diagnósticos precisos, utilizamos repuestos de calidad y ofrecemos 
+                <strong>garantía en todos nuestros trabajos</strong>. Tu satisfacción es nuestra prioridad.
+            </p>
+            <div class="features">
+                <div class="feature">
+                    <div class="icon">✅</div>
+                    <h4>Diagnóstico Preciso</h4>
+                </div>
+                <div class="feature">
+                    <div class="icon">🔩</div>
+                    <h4>Repuestos de Calidad</h4>
+                </div>
+                <div class="feature">
+                    <div class="icon">🛡️</div>
+                    <h4>Garantía Asegurada</h4>
+                </div>
+                <div class="feature">
+                    <div class="icon">⚡</div>
+                    <h4>Atención Rápida</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="contact-section">
+            <h2>📞 ¿Necesitás una reparación?</h2>
+            <p>Escribinos por WhatsApp o seguinos en Instagram para ver nuestros trabajos.</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/549223?text=Hola!%20Vengo%20de%20la%20página%20web%20y%20quiero%20consultar%20por%20una%20reparación." class="btn btn-light" target="_blank">
+                    💬 Escribir por WhatsApp
+                </a>
+                <a href="https://instagram.com/REPARACIONESGONZAMDP" class="btn btn-instagram" target="_blank">
+                    📷 @REPARACIONESGONZAMDP
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Reparaciones Gonzamdq - Mar del Plata, Argentina</p>
+        <p>
+            <a href="https://instagram.com/REPARACIONESGONZAMDP" target="_blank">Instagram</a> | 
+            <a href="https://wa.me/549223" target="_blank">WhatsApp</a>
+        </p>
+        <p style="margin-top:10px; font-size:0.8rem;">Técnico Electromecánico | Diagnóstico Preciso | Garantía en todos los trabajos</p>
+    </footer>
+
+</body>
+</html>'''
+
+# Guardar el archivo
+with open('/mnt/agents/output/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("✅ Archivo index.html creado exitosamente")
+print(f"📄 Tamaño: {len(html_content)} caracteres")
