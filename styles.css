@@ -261,6 +261,7 @@ body {
 ::-webkit-scrollbar-track { background: var(--color-bg); }
 ::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-primary-dark); }
+
 /* Fuerza a la caja de contacto a contener todos los textos y correos largos */
 .contacto-card, .contacto-card * {
   max-width: 100% !important;
